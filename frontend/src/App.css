@@ -1,0 +1,34 @@
+:root {
+  color-scheme: dark;
+  --bg: #0e1420;
+  --panel: #141c2b;
+  --muted: #8aa0c6;
+  --text: #d9e6ff;
+  --accent: #5e8bff;
+  --danger: #ff7a7a;
+}
+
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
+
+.shell { max-width: 1080px; margin: 28px auto; padding: 0 16px; }
+h1 { margin: 0 0 8px; font-size: 24px; }
+.subtitle { margin: 0 0 18px; color: var(--muted); }
+
+.toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.spacer { flex: 1; }
+.toggle { display: inline-flex; gap: 8px; align-items: center; font-size: 14px; color: var(--muted); }
+
+.btn { background: var(--accent); color: #fff; border: 0; padding: 10px 14px; border-radius: 10px; cursor: pointer; }
+.btn[disabled] { opacity: 0.6; cursor: default; }
+
+.panel { background: var(--panel); border-radius: 14px; padding: 14px; }
+.panel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+
+.help { color: var(--muted); text-align: center; padding: 60px 0; }
+
+.error { background: #2a1212; border: 1px solid #512; color: #fbb; padding: 10px 12px; border-radius: 10px; margin-bottom: 12px; }
+
+.meta { display: flex; gap: 16px; align-items: center; margin: 10px 0 6px; color: var(--muted); }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+.muted { color: var(--muted); }
